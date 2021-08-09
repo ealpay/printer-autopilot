@@ -1,0 +1,16 @@
+{
+  "name": "my-electron-app",
+  "productName": "Printer Autopilot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Ferhat Emre Alpay",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.8",
+    "electron-packager": "^15.3.0"
+  }
+}

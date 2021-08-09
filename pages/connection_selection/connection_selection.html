@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/style.css" rel="stylesheet">
+    <title>Printer Autopilot</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid fill-height">
+      <div class="row h-100">
+          <div class="col-4 h-100 orange-gradient-background pt-3">
+              <ul class="list-group h-85">
+                  <li class="list-group-item border-0 bg-transparent text-light">1. Yazıcı seçimi</li>
+                  <li class="list-group-item border-0 bg-light text-body active" aria-current="true">2. Bağlantı seçimi</li>
+                  <li class="list-group-item border-0 bg-transparent text-light">3. Kurulum</li>
+                <li class="list-group-item border-0 bg-transparent text-light">4. Son</li>
+                </ul>
+
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <img src="../../assets/images/trendyol_logo.png" class="img-fluid">
+                  </div>
+                </div>
+                
+          </div>
+
+
+            <div class="col-8 pt-3">
+              <div class="container-fluid h-85">
+                <!-- Content-->
+                <div class="row">
+                  <div class="col-12">
+                    <h2>Bağlantı Seçimi</h2>
+                    <p>Lütfen kurulum yapılacak olan yazıcının bağlantı şeklini aşağıdaki seçeneklerden belirleyiniz.</p>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                  <div id="usbConnectionWrapper" class="col-3 card">
+                      <img src="../../assets/images/usb_connection.png" class="card-img-top">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">USB</h5>
+                        <small class="d-inline-block" style="font-size: 10px;">Sadece bir bilgisayardan yazdırma yapacaksanız bu yöntemi öneririz.</small>
+                        <a id="btnUsbConnection" href="#" class="btn-transparent stretched-link"></a>
+                      </div>
+                  </div>
+                  <div class="col-1"></div>
+                  <div id="networkConnectionWrapper" class="col-3 card">
+                    <img src="../../assets/images/network_connection.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">AĞ</h5>
+                      <small class="d-inline-block" style="font-size: 10px;">Birden fazla bilgisayardan yazdırma yapacaksanız bu yöntemi öneririz.</small>
+                      <a id="btnNetworkConnection" href="#" class="btn-transparent stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-1"></div>
+                  <div id="wifiConnectionWrapper" class="col-3 card">
+                    <img src="../../assets/images/wifi_connection.png" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">WIFI</h5>
+                      <small class="d-inline-block" style="font-size: 10px;">Bilgisayardan veya mobil cihazdan yazdırma yapacaksanız bu yöntemi öneririz.</small>
+                      <a id="btnWifiConnection" href="#" class="btn-transparent stretched-link"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content-->
+              </div>
+
+      
+                
+                <!-- Buttons -->
+                <div class="row h-15 flex-row-reverse pt-2">
+                    <div class="col-3 ">
+                        <button id="btnContinueFromConnectionSelection" type="button" class="btn btn-primary btn-md" disabled>Devam Et</button>
+                    </div>
+                </div>
+                <!-- Buttons -->
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="connection_selection.js"></script>
+    <script src="../../assets/bootstrap.bunle.min.js"></script>
+
+  </body>
+</html>

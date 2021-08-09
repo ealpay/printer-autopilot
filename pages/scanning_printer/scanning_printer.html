@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/style.css" rel="stylesheet">
+    <title>Printer Autopilot</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid fill-height">
+      <div class="row h-100">
+          <div class="col-4 h-100 orange-gradient-background pt-3">
+              <ul class="list-group h-85">
+                  <li class="list-group-item border-0 bg-transparent text-light">1. Yazıcı seçimi</li>
+                  <li class="list-group-item border-0 bg-light text-body active" aria-current="true">2. Bağlantı seçimi</li>
+                  <li class="list-group-item border-0 bg-transparent text-light">3. Kurulum</li>
+                <li class="list-group-item border-0 bg-transparent text-light">4. Son</li>
+                </ul>
+
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <img src="../../assets/images/trendyol_logo.png" class="img-fluid">
+                  </div>
+                </div>
+                
+          </div>
+
+
+            <div class="col-8 pt-3">
+              <div class="container-fluid h-85">
+                <!-- Content-->
+                <div class="row">
+                  <div class="col-12">
+                    <h2>Tarama</h2>
+                    <p>Lütfen kurulum yapılacak olan yazıcının bağlantı şeklini aşağıdaki seçeneklerden belirleyiniz.</p>
+                  </div>
+                </div>
+
+                <div id="scanningWrapper" class="row justify-content-center mt-3 text-center">
+                    <lottie-player src="../../assets/lottie/scanning.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    <h5>Tarama yapılıyor...</h5>
+                </div>
+
+
+                <div id="tableContentWrapper" class="row mt-3 d-none">
+                    <div class="col-12">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Yazıcı Adı</th>
+                                <th scope="col">Ip</th>
+                                <th scope="col">Durum</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="cursor-pointer opacity-25">
+                                <td>Xerox WorkCenter 3335</a></td>
+                                <td>192.156.22.14</td>
+                                <td></td>
+                              </tr>
+                              <tr class="cursor-pointer opacity-25">
+                                <td>Kyocera P5021CDW</td>
+                                <td>10.11.10.07</td>
+                                <td></td>
+                              </tr>
+                              <tr id="hpPrinterTableRow" class="cursor-pointer">
+                                <td>HP W1A79A M479FDN</td>
+                                <td>192.168.20.21</td>
+                                <td>(Varsayılan)</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
+                    <div id="driverAndCheckWrapper" class="col-12 d-none">
+                        <p class="mt-3"><b>HP W1A79A M479FDN</b> yazıcısı için driver bulundu. Yüklemek için lütfen <a id="btnOpenDriverSite" href="#">tıklayınız</a>.</p>
+                          <div class="form-check mt-5">
+                            <input class="form-check-input" type="checkbox" value="" id="checkboxDriverIsOk">
+                            <label class="form-check-label" for="checkboxDriverIsOk">
+                                Seçili yazıcının gerekli driver kurulumunu yaptığımı onaylıyorum.
+                            </label>
+                          </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Content-->
+              </div>
+
+      
+                
+                <!-- Buttons -->
+                <div class="row h-15 flex-row-reverse pt-2">
+                    <div class="col-4 ">
+                        <button id="btnContinueFromScanningPrinter" type="button" class="btn btn-primary btn-md d-none">Kurulumu Başlat</button>
+                    </div>
+                </div>
+                <!-- Buttons -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scanning_printer.js"></script>
+    <script src="../../assets/lottie-player.js"></script>
+    <script src="../../assets/bootstrap.bunle.min.js"></script>
+
+  </body>
+</html>
